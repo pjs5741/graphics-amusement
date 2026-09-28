@@ -67,3 +67,46 @@ vcpkg_installed/
 # test output & cache
 Testing/
 .cache/
+
+# Visual Studio local settings and caches
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.VC.db
+*.VC.db-shm
+*.VC.db-wal
+*.VC.VC.opendb
+*.ipch
+ipch/
+CMakeUserPresets.json
+
+# Visual Studio build output
+[Dd]ebug/
+[Rr]elease/
+[Dd]ebugPublic/
+x64/
+x86/
+ARM64/
+[Bb]in/
+[Oo]bj/
+/out/
+*.tlog
+*.lastbuildstate
+*.idb
+*.iobj
+*.ipdb
+
+# Compiled shaders (keep HLSL source)
+*.cso
+
+# Local profiling captures
+*.wpix
+*.pix3
+
+# Private notes at the repository root (keep public Markdown docs)
+/AGENTS.md
+/대화기록.md
+/예상면접질문.md
+/기술선택과_대안.md
