@@ -110,3 +110,10 @@ ARM64/
 /대화기록.md
 /예상면접질문.md
 /기술선택과_대안.md
+
+# Restorable NuGet packages and archived local project
+/packages/
+/archive/
+
+# Private project study glossary
+/그래픽스_용어사전.md

@@ -1,7 +1,7 @@
 #pragma once
 
-#include "DXSampleHelper.h"
-#include "Win32Application.h"
+#include "Common/DXSampleHelper.h"
+#include "Platform/Win32Application.h"
 
 class DXSample
 {
@@ -25,6 +25,8 @@ public:
 
 
 protected:
+    std::wstring GetAssetFullPath(LPCWSTR assetName);
+
     void GetHardwareAdapter(
         _In_ IDXGIFactory1* pFactory,
         _Outptr_result_maybenull_ IDXGIAdapter1** ppAdapter,
@@ -36,4 +38,5 @@ protected:
    
 private:
     std::wstring m_title;
+    std::wstring m_assetsPath;
 };

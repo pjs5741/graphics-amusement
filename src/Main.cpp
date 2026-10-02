@@ -1,5 +1,5 @@
 #include "stdafx.h"
-#include "D3D12HelloWindow.h"
+#include "Samples/D3D12HelloWindow.h"
 
 int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE, LPSTR, int nCmdShow)
 {

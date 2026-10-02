@@ -1,57 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="소스 파일">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
-    </Filter>
-    <Filter Include="헤더 파일">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
-    </Filter>
-    <Filter Include="리소스 파일">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
-    </Filter>
+    <Filter Include="src"><UniqueIdentifier>{33167bd7-a1e2-4930-9ead-994047498bd7}</UniqueIdentifier></Filter>
+    <Filter Include="src\Common"><UniqueIdentifier>{73b27eac-281e-4382-a9e1-266f17267855}</UniqueIdentifier></Filter>
+    <Filter Include="src\Platform"><UniqueIdentifier>{5f67c70a-4a67-45fe-9edd-4fc6f29a3b4c}</UniqueIdentifier></Filter>
+    <Filter Include="src\Samples"><UniqueIdentifier>{3ed311bc-b3ef-4eff-9543-d1b82c3f966e}</UniqueIdentifier></Filter>
+    <Filter Include="shaders"><UniqueIdentifier>{ae931971-500d-40a5-bc89-65e2966a9994}</UniqueIdentifier></Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\D3D12HelloWindow.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="src\stdafx.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="src\DXSample.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="src\DXSampleHelper.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-    <ClInclude Include="src\Win32Application.h">
-      <Filter>헤더 파일</Filter>
-    </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="src\D3D12HelloWindow.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="src\Main.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="src\stdafx.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="src\DXSample.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="src\DXSampleHelper.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-    <ClCompile Include="src\Win32Application.cpp">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
+    <ClInclude Include="src\Samples\D3D12HelloWindow.h"><Filter>src\Samples</Filter></ClInclude>
+    <ClInclude Include="src\Common\DXSample.h"><Filter>src\Common</Filter></ClInclude>
+    <ClInclude Include="src\Common\DXSampleHelper.h"><Filter>src\Common</Filter></ClInclude>
+    <ClInclude Include="src\stdafx.h"><Filter>src</Filter></ClInclude>
+    <ClInclude Include="src\Platform\Win32Application.h"><Filter>src\Platform</Filter></ClInclude>
+    <ClCompile Include="src\Samples\D3D12HelloWindow.cpp"><Filter>src\Samples</Filter></ClCompile>
+    <ClCompile Include="src\Common\DXSample.cpp"><Filter>src\Common</Filter></ClCompile>
+    <ClCompile Include="src\Common\DXSampleHelper.cpp"><Filter>src\Common</Filter></ClCompile>
+    <ClCompile Include="src\Main.cpp"><Filter>src</Filter></ClCompile>
+    <ClCompile Include="src\stdafx.cpp"><Filter>src</Filter></ClCompile>
+    <ClCompile Include="src\Platform\Win32Application.cpp"><Filter>src\Platform</Filter></ClCompile>
     <None Include="packages.config" />
+    <CustomBuild Include="shaders\HelloTriangle.hlsl"><Filter>shaders</Filter></CustomBuild>
   </ItemGroup>
 </Project>

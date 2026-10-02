@@ -1,5 +1,5 @@
 #include "stdafx.h"
-#include "DXSample.h"
+#include "Common/DXSample.h"
 
 using namespace Microsoft::WRL;
 
@@ -11,7 +11,7 @@ DXSample::DXSample(UINT width, UINT height, std::wstring name) :
 {
     WCHAR assetsPath[512];
     GetAssetsPath(assetsPath, _countof(assetsPath));
-    //m_assetsPath = assetsPath;
+    m_assetsPath = assetsPath;
 
     m_aspectRatio = static_cast<float>(width) / static_cast<float>(height);
 }
@@ -31,6 +31,11 @@ void DXSample::ParseCommandLineArgs(WCHAR* argv[], int argc)
             m_title = m_title + L"(WARP)";
         }
     }
+}
+
+std::wstring DXSample::GetAssetFullPath(LPCWSTR assetName)
+{
+    return m_assetsPath + assetName;
 }
 
 void DXSample::GetHardwareAdapter(IDXGIFactory1* pFactory, IDXGIAdapter1** ppAdapter, bool requestHighPerformanceAdapter)

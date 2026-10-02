@@ -1,6 +1,6 @@
 #pragma once
 
-#include "DXSample.h"
+#include "Common/DXSample.h"
 
 class DXSample;
 
